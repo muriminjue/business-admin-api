@@ -1,0 +1,58 @@
+
+GET http://localhost:8000/api/products
+
+###
+
+POST http://localhost:8000/api/products
+content-type: application/json
+
+{
+    "name": "98 Ranches",
+    "description": "honey",
+   "measure": "litres"
+}
+
+###
+POST http://localhost:8000/api/products/	
+a6e0fdc1-3d62-4f0d-b56b-ed33ea85ed42
+content-type: application/json
+
+{
+    "quantity":""
+}
+
+###
+
+POST http://localhost:8000/api/products/a6e0fdc1-3d62-4f0d-b56b-ed33ea85ed42
+content-type: application/json
+
+{
+    "amount" : -600
+}
+
+###
+
+GET http://localhost:8000/api/staff 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6eyJpZCI6ImUyNjNmOWE0LTE4NWYtNDA3Yy1hY2IzLTcwMTA3OWNhNTE4ZiIsInBlcm1pc3Npb25zIjoxLCJwYXNzd29yZCI6IiQyYSQxMiQ0NTQzbUxSS21uRDAxYWJCU2l1anZlNkNPMTd5MHozLmVYbXVEL1VESUV1cFA3NHY2MmlabSIsImNyZWF0ZWRBdCI6IjIwMjEtMDctMDZUMTE6MDA6MDkuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDctMDZUMTE6MDA6MDkuMDAwWiIsInVzZXJuYW1lIjoibWF0aGV3QGNyb3NzdGVjaGZvb2RzLmNvLmtlIiwiU3RhZmYiOnsiaWQiOiI4YWE4NGZmYy00Y2VjLTQwMGEtYjlmNi1mNmVlYzdmZGNkZGIiLCJmbmFtZSI6Ik1hdGhldyIsInN1cm5hbWUiOiJNdXJpbWkiLCJlbWFpbCI6Im1hdGhld0Bjcm9zc3RlY2hmb29kcy5jby5rZSIsInBob25lIjoiMDcwMjMwMjI1NSIsIm5hdGlkIjozMzYxNzkzMCwiZGVzaWduYXRpb24iOiJEaXJlY3RvciIsImltYWdlIjoiMTAxLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjEtMDctMDZUMTA6NTk6MzMuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDctMDZUMTA6NTk6MzMuMDAwWiJ9fSwiaWF0IjoxNjI1ODI0NTQ1LCJleHAiOjE2MjU4MjgxNDV9.Ahc7cKvDDpH4ShUjOPTjL5vTOO8LU6n89pbfP9ufzxk
+###
+
+POST  http://localhost:8000/api/user/register
+Content-Type: application/json
+
+{
+    "username": "mathew@crosstechfoods.co.ke" ,
+    "password": ""
+}
+
+###
+POST  http://localhost:8000/api/user/login
+Content-Type: application/json
+
+{
+    "username": "mathew@crosstechfoods.co.ke" ,
+    "password": "pietychoice" 
+    
+}
+
+###
+GET http://localhost:8000/api/headers
